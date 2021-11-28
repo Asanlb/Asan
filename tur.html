@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="shortcut icon" href="https://lh3.googleusercontent.com/proxy/K9tdUkFJvCqwkTvA6oZ2_hl_VOXDckxLcR5MIb-aye8lBiGroctUu29lMtGVOA2J0YotNrMtSC6MKJBzJ700oeE-_fyWBI4blV5qYuj8TQjFIcwJZQ">
+	<title>Turagent</title>
+	<style>
+       body {
+        background:  url(https://html5book.ru/wp-content/uploads/2016/09/background75.jpg) ;
+        -moz-background-size: 110%; 
+        -webkit-background-size: 110%; 
+        -o-background-size: 110%; 
+        background-size: 110%; 
+       }
+    </style>
+
+</head>
+ <BODY  style="position: center;">
+    <style type="text/css">
+      header {
+  width: 100%;
+  padding: 10px ,0.5% 0px 0.5%;
+  background: transparent;
+  float :left;
+  position: fixed;
+}
+header #logo {
+  color:  #fff;
+  cursor: pointer;
+}
+header #logo span{
+  font-size: 1.7em;
+  line-height: 45px;
+  margin-left: 40px;
+  font-family: 'Suez One', serif;
+}
+
+@media (min-width:  701px) {
+  #logo{
+    float :left;
+    width: 30%;
+    font-size: 1.1em;
+  }
+
+  #about{
+    float: right;
+    width: 67%;
+  }
+}
+@media (max-width:  700px) {
+  #logo{
+    margin-top: 15px;
+    float :left;
+    width: 100%;
+    font-size: 1.5em;
+  }
+  #about{
+    float: left;
+    width: 100%;
+  }
+}
+
+#about{
+  text-align: center;
+  font-size: 1em;
+  line-height: 40px;
+  margin-bottom: 10x;
+}
+
+#about > a{color: #fff;}
+
+#about > a:hover{
+  color: #b0b0b0;
+  text-decoration: underline;
+}
+
+#about > a:not(:last-child){
+  margin-right: 7%;
+} 
+.fixed {
+  z-index: 5000;
+  background-color: #fff;
+  border-bottom: 1px solid silver;
+}
+
+header.fixed #logo{
+  color: #343434;
+}
+.fixed #about a {color: #343434}
+.fixed #about a:hover {color: #7c7c7c}
+
+#top{
+  width: 100%;
+  background-image: url(https://i.pinimg.com/originals/c6/de/80/c6de80af34ae94a0cc6c0c7dbda4c085.jpg);
+  background-blend-mode: multiply;
+  background-color: #2e3a44;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+@media (min-width: 1001px){
+    #top{
+      font-size: 3em;
+      height: 1000px;
+    }
+}
+@media(max-width: 1000px) and (min-width: 651px) {
+  #top {
+    font-size: 1.3em;
+    padding-top: 50%;
+    height: 600px;
+  }
+}
+
+@media (max-width: 650px){
+  #top {
+    font-size: 3em;
+    height: 500px;
+  }
+}
+    </style>
+     <header>
+    <div id="logo" onclick="slowScroll('top')">
+      <span>Turagent</span>
+    </div>
+    <div id="about">
+      <a href="#" title="ОПИСАНИЕ" onclick="slowScroll('#opis')">ОПИСАНИЕ</a>
+      <a href="#" title="ТУРЫ" onclick="slowScroll('#tury')">ТУРЫ</a>
+      <a href="#" title="УСЛУГИ" onclick="slowScroll('#uslugy')">УСЛУГИ</a>
+      <a href="#" title="Контакты" onclick="slowScroll('#contacts')">Контакты</a>
+    </div>
+  </header>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>function slowScroll(id){
+    $('html,body').animate({
+      scrollTop: $(id).offset().top
+    },500);
+  } 
+
+  $(document).on("scroll", function() {
+    if($(window).scrollTop()===0)
+      $("header").removeClass("fixed");
+    else
+      $("header").attr("class","fixed");
+  });
+  </script>
+            <img width="100%"  src="https://sun9-75.userapi.com/c834104/v834104179/4d2e1/nMc3N83MCaw.jpg"> 
+            <img  style="position: absolute; top:100px; left: 500px;" src="">
+  <style>
+   .line {
+    border-top: 4px solid darkblue; 
+    border-bottom: 4px solid darkblue; 
+   }
+    h1{text-align:center;}
+    h3{text-align:center;}    
+  </style>
+<div id="tury">
+  <div id="headerwrap">
+    <div class="container">
+      <div class="line">
+      <div class="row centered">
+        <div class="col-lg-12 col-lg-offset-4">
+          <h1>Путешествуй вместе с Turagent</b></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+ <script type="text/javascript">
+all_images = new Array (
+"https://fly.eastmidlandsairport.com/images/top_carousel3",
+"https://image.arrivalguides.com/1500x600/14/b3e1ec423cd4d9178d5cbfdb7d44fde3.jpg",
+"https://salakis.se/wp-content/uploads/sites/5/2015/08/yogurtar.jpg",
+"https://i0.wp.com/elitegroup.com.tr/wp-content/uploads/2019/01/why_alanya.jpg?fit=1500%2C600&ssl=1");
+var ImgNum = 0;
+var ImgLength = all_images.length - 1;
+var delay = 2500;
+var lock = false;
+var run;
+
+function chgImg(direction) {
+ if (document.images) {
+  ImgNum = ImgNum + direction;
+  if (ImgNum > ImgLength) { ImgNum = 0; }
+  if (ImgNum < 0) { ImgNum = ImgLength; }
+  document.slide_show.src = all_images[ImgNum];
+ }
+}
+
+function auto() {
+ if (lock == true) {
+  lock = false;
+  window.clearInterval(run);
+ }
+ else if (lock == false) {
+  lock = true;
+  run = setInterval("chgImg(1)", delay);
+ }
+}
+</script>
+</div>
+<table style="margin: 0 auto;">
+ <tr style="text-align: center;">
+  <td colspan="3"><img src="image/img_1.png" name="slide_show"></td>
+ </tr>
+ <tr>
+  <td style="text-align: right;"><a href="javascript:chgImg(-1)"></a></td>
+  <td style="text-align: center;"><a href="javascript:auto()"></a></td>
+  <td style="text-align: left;"><a href="javascript:chgImg(1)"></a></td>
+ </tr>
+</table>
+<script type="text/javascript">
+ auto();
+</script>
+<style>
+   h1 {
+    font-family: Geneva, Arial, Helvetica, fantasy;
+   } 
+   p {
+    font-family: Georgia, 'Times New Roman', Times, ;
+    font-style: normal;
+    border-style: solid; 
+    padding: 5px; 
+    background: #FAEBD7; 
+    margin: 0; 
+    background: #FFF5EE; 
+    color: #000000; 
+    border-bottom-width: 2px; 
+    border-bottom-style: solid; 
+    border-bottom-color: white; 
+   height: 300px;
+   }
+   .letter {                                    
+    color: red; 
+    font-size: 200%; 
+  </style>
+  <div id="opis">
+<div class="container w">
+    <div class="row centered">
+      <br><br>
+      <div class="col-lg-4 col-2">
+        <h1>КЛИМАТ</h1>
+      <p><span class="letter">В</span> Турции климат мягкий средиземноморский , где влажность никогда не превышает 35% , жара смягчается освежающими морскими бризами, а целебный горный воздух насыщен эфирными маслами. Уникальный климат идеально подходит даже для людей с астматическими, бронхиальными заболеваниями.  Летняя температура воздуха колеблется в рамках +30 - 35 градусов по цельсию, вода прогревается до 26 градусов</p>
+      </div>
+     
+
+      <div class="col-lg-4 col-2">
+        <i class="fa fa-laptop"></i>
+
+        <h1>ГОРОД</h1>
+        <p><span class="letter">Т</span>урция - удивительная и неповторимая страна, кладезь мировой истории и усыпальница древних цивилизаций, место, где зарождались великие легенды, родина библейского и древнегреческого эпоса, воспетая Гомером и восхваленная великими мира сего. Упоительная картина совершенства рисована на холсте двух континентов, обрамленная лазурными водами четырех морей и бескрайней чередой великолепных пляжей. </p>
+      </div>
+     
+
+      <div class="col-lg-4 col-2">
+        <i class="fa fa-trophy"></i>
+        <h1>ЯЗЫК</h1>
+        <p><span class="letter">Г</span>осударственным языком является турецкий, локально, в некоторых регионах используются курдский, азербайджанский, гагаузский, кабардинский и другие. Вся письменность ведется на основе латинского алфавита (писать по-турецки арабскими буквами запрещено законом). Удивительные факт: в глубине страны, в некоторых поселениях по сей день используется уникальный и древнейший язык - арамийский, язык Исуса Христа!</p>
+      </div>
+    </div> </div>
+  </div>
+    <br> 
+  </br>
+  <style>
+   #panel {
+    background: #ccc; 
+   } 
+   #panel p {
+    padding: 5px; 
+    margin: 0; 
+   }
+   #title {
+    background: #333333; 
+    color: white; 
+    border-bottom-width: 2px; 
+    border-bottom-style: solid; 
+    border-bottom-color: white;     
+   }
+  </style>
+  
+    
+  <h1 style="text-align: center;">Турция</h1>
+        <marquee bgcolor="#F0F8FF"><h3>Наиболее известные мистические места Турции<h3></marquee>
+    <div class="section rooms">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="https://static.guidego.ru/5fc7a2576f306646dba524c9.400x300.jpeg" >
+                        <div class="name">
+                            <h2>КАППАДОКИЯ</h2>
+                        </div>
+                    <img src="https://carmensluxurytravel.com/wp-content/uploads/2014/10/4517133411_6f0a888aa1_z-370x340.jpg" >
+                        <div class="name">
+                            <h2>ХРАМ АПОЛЛОНА</h2>
+                        </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <img src="http://photos.lifeisphoto.ru/190/0/1909618.jpg">
+                        <div class="name">
+                            <h2>ЛИКИЙСКИЕ ГРОБНИЦЫ</h2>
+                        </div>
+                </div>
+
+                
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+                    <img src="https://www.tourapricot.com/media/cache/20/e1/20e1d5bff8eda055ce0cbba43cb6dc48.jpg">
+                        <div class="name">
+                            <h2>ОЗЕРО ВАН</h2>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <div id="contacts">
+        <h1 style="text-align: center; margin-top:30px ;" >Как связаться?</h1>
+      <div id="panel">
+        <p id="title"><IMG width="5%" src=https://icon-library.com/images/telephone-icon-png/telephone-icon-png-0.jpg><a href="malito:+77759785303">+7759785303</a>
+        <IMG width="5%" src=https://меломаниак.рф/wp-content/uploads/2020/01/photo.png><a href="malito:aruk003@bk.ru">aruk003@bk.ru</a>
+        <IMG width="5%" src=https://www.boogiewoogieshop.com/wp-content/uploads/2019/04/instagram.png> <a href="https://instagram.com/_arukk_?r=nametag" style='text-decoration: none;'>arukk</a></p>
+      </div>
+  </div>
+</body>
+</html>
